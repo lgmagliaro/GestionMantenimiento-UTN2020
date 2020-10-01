@@ -1,0 +1,37 @@
+# INDICADORES DE MANTENIMIENTO
+## Definiciones
+El MTBF y el MTTR son indicadores de mantenimiento muy utilizados en la metodología TPM, ambos tienen como base estadística el tiempo promedio, de ocurrencia de fallas (MTBF) y de duración de reparaciones (MTTR).
+### ¿Qué es el MTBF?
+El Tiempo Medio Entre Fallas conocido como MTBF, por sus siglas en inglés (Mean Time Between Failures), es un indicador que representa el tiempo promedio en el que un equipo funciona sin fallas, dicho de otra forma, el tiempo promedio que transcurre entre una falla y la siguiente.
+>MTBF (Mean Time Between Failure) - Tiempo medio entre fallas (TMEF)
+MFBT = Tiempo total de producción / Numero de fallas (2)
+### ¿Qué es el MTTR?
+El Tiempo Medio Entre Reparaciones conocido como MTTR, por sus siglas en inglés (Mean Time Through Repair), es una medida que indica el tiempo estimado que un equipo estará parado mientras es reparado, dicho de ora forma, el tiempo promedio en que se efectúa una reparación.
+>MTTR (Mean Time To Repair) - Tiempo medio de reparación (TMDR)
+MTTR = Tiempo total de reparaciones / Numero de reparaciones (1)
+------
+#### Ejemplo 1
+Una grúa durante el primer trimestre del año 2020 ha tenido 3 intervenciones. El tiempo de mantenimiento acumulado es de 9 horas.
+Determine el MTTR
+* Solución:
+Tiempo de reparaciones es 9 horas, la cantidad de reparaciones es de 3. Entonces aplicando la ecuación (1) queda MTTR = 9/3; MTTR=3
+-------
+#### Ejemplo 2
+Los registros de mantenimiento del primer trimestres del año 2020, determinan que un cargador de piezas de una maquina, tuvo 5 fallas y se insumieron 22 horas en reparaciones. 
+Determine el MTTR y MTBF
+Nota: El equipo trabaja de lunes a viernes los tres turnos
+* Solución:
+a.- Tiempo de reparaciones es 22 horas, la cantidad de reparaciones es de 5. Entonces aplicando la ecuación (1) queda MTTR = 22/5; MTTR=4,4
+b.- Para el cálculo del MTBF, primero debemos determinar la cantidad de horas de producción
+
+MES|DIAS|HORAS
+---|----|-----
+ENE|22|22X24=528
+FEB|20|20X24=480
+MAR|22|22X24=528
+
+TOTAL HORAS=528+480+528=1536hrs
+
+c.- Con el dato de las horas del item b, ahora podemos determinar el MTBF. Horas = 1536 hr y la cantidad de fallas es 5. Entonces MTBF = 1536/5; MTBF=307,2
+>NOTA. Podemos determinar con el MTBF, la tasa de falla que es lambda=1/MTBF, en este caso lambda=1/307.2; lambda=0,003255208
+ESTO QUIERE DECIR QUE ESTE EQUIPO TIENE UNA TASA DE FALLA DE 0.0032/horas
